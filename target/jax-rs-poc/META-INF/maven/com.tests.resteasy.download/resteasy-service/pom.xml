@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	
+	<name>WAR: resteasy-service.war</name>
+	<artifactId>resteasy-service</artifactId>
+	<packaging>war</packaging>
+	<url/>
+
+	<parent>
+		<groupId>com.tests.resteasy.download</groupId>
+		<artifactId>resteasy-download-pdf</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
+
+	
+	<dependencies>
+
+			<!-- BEGIN: Red Hat ${jboss.server.version} artifacts -->
+			<!-- https://mvnrepository.com/artifact/org.jboss.logmanager/log4j-jboss-logmanager -->
+			<dependency>
+				<groupId>org.jboss.logmanager</groupId>
+				<artifactId>log4j-jboss-logmanager</artifactId>
+			</dependency>
+	
+			<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+			<dependency>
+				<groupId>commons-io</groupId>
+				<artifactId>commons-io</artifactId>
+			</dependency>
+			<!-- END: Red Hat JBoss eap 7.3 artifacts -->
+			
+			
+			<!-- BEGIN JBOSS RESTEASY -->
+			<!-- https://mvnrepository.com/artifact/com.google.code.guice/guice -->
+			<dependency>
+				<groupId>com.google.code.guice</groupId>
+				<artifactId>guice</artifactId>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/org.scannotation/scannotation -->
+			<dependency>
+				<groupId>org.scannotation</groupId>
+				<artifactId>scannotation</artifactId>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/org.jboss.resteasy/resteasy-atom-provider -->
+			<dependency>
+				<groupId>org.jboss.resteasy</groupId>
+				<artifactId>resteasy-atom-provider</artifactId>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/org.jboss.resteasy/resteasy-jackson-provider -->
+			<dependency>
+				<groupId>org.jboss.resteasy</groupId>
+				<artifactId>resteasy-jackson-provider</artifactId>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/org.jboss.resteasy/resteasy-jaxb-provider -->
+			<dependency>
+				<groupId>org.jboss.resteasy</groupId>
+				<artifactId>resteasy-jaxb-provider</artifactId>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/org.jboss.resteasy/resteasy-jaxrs -->
+			<dependency>
+				<groupId>org.jboss.resteasy</groupId>
+				<artifactId>resteasy-jaxrs</artifactId>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/org.jboss.resteasy/resteasy-jettison-provider -->
+			<dependency>
+				<groupId>org.jboss.resteasy</groupId>
+				<artifactId>resteasy-jettison-provider</artifactId>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/org.jboss.resteasy/resteasy-multipart-provider -->
+			<dependency>
+				<groupId>org.jboss.resteasy</groupId>
+				<artifactId>resteasy-multipart-provider</artifactId>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/org.jboss.resteasy/resteasy-spring -->
+			<dependency>
+				<groupId>org.jboss.resteasy</groupId>
+				<artifactId>resteasy-spring</artifactId>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/org.jboss.resteasy/resteasy-yaml-provider -->
+			<dependency>
+				<groupId>org.jboss.resteasy</groupId>
+				<artifactId>resteasy-yaml-provider</artifactId>
+			</dependency>
+
+			<dependency>
+				<groupId>org.jboss.resteasy</groupId>
+				<artifactId>resteasy-cache-core</artifactId>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.resteasy</groupId>
+				<artifactId>resteasy-fastinfoset-provider</artifactId>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.resteasy</groupId>
+				<artifactId>resteasy-guice</artifactId>
+			</dependency>
+
+			<!-- END JBOSS RESTEASY -->
+				
+	</dependencies>
+	
+	<build>
+		<pluginManagement>
+			<plugins>
+	
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>${version.compiler.plugin}</version>
+					<configuration>
+						<source>${maven.compiler.source}</source>
+						<target>${maven.compiler.target}</target>
+					</configuration>
+				</plugin>
+	
+			</plugins>
+		</pluginManagement>
+	</build>
+
+</project>

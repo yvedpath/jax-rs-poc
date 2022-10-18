@@ -18,7 +18,7 @@ public class ContentResponse implements Serializable{
 	private String mimeType;
 	private String fileName;
 
-	@XmlMimeType(MediaType.APPLICATION_OCTET_STREAM)
+	 	@XmlMimeType(MediaType.APPLICATION_OCTET_STREAM)
 	private byte[] content;
 
 	public ContentResponse () {

@@ -1,0 +1,16 @@
+<jboss-deployment-structure>
+	<deployment>
+	<dependencies>
+	<!--  	<module name="org.jboss.resteasy.resteasy-jaxb-provider"
+			services="import" />
+		<module name="org.jboss.resteasy.resteasy-jaxrs"
+			services="import" />
+		<module name="org.jboss.resteasy.resteasy-multipart-provider"
+			services="import" />
+		<module name="org.jboss.resteasy.resteasy-spring"
+			services="import" /> -->
+		<module name="org.springframework.spring" export="true"
+			services="import" />
+	</dependencies>
+	</deployment>
+</jboss-deployment-structure>
